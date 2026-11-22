@@ -1,0 +1,281 @@
+.logo{
+    width: 48px;
+    height: 48px;
+}
+/* 共通 */
+.section{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
+.section_en{
+    color: #3F8F5A;
+    font-size: 50px;
+}
+.sention_ja{
+    color: #777777;
+    font-size: 20px;
+}
+
+/* HEADER */
+.header{
+    /* 並び方 */
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    /* 書式 */
+    background-color: #E8F3EA;
+    /* 形 */
+    border-radius: 8px;
+}
+.header div{
+    /* 並び方 */
+    display: flex;
+    gap: 10px;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.header_contents{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 5px;
+    color: white;
+}
+/* header_contentsの中でwidthやheightをすると */
+.header_contents p{
+    /* テキストボックスの間隔 */
+    width: 160px;
+    height: 44px;
+    background-color: #3F8F5A;
+    color: white;
+    /* 並び方 */
+    display: flex; /*←display flexがないと後述する並び替えができない。イメージこれでテキストボックス作っているような*/
+    align-items: center;
+    justify-content: center;
+    /* 形 */
+    border-radius: 8px;
+}
+
+/* MAIN VISUAL */
+.main_visual{
+    /* 書式 */
+    background-color: #E8F3EA;
+    /* 並び方 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 50px;
+    /* 形 */
+    border-radius: 8px;
+
+}
+.main_visual p{
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.main_visual_no_cheese{
+    color: orange;
+}
+.main_visual_msg{
+    color: #3F8F5A;
+    font-size: 50px;
+    font-weight: 600;
+}
+.main_visual_click{
+    /* 書式 */
+    background: #3F8F5A;
+    color: white;
+    width: 100px;
+    /* 並び方 */
+    display: flex;
+    justify-content: center;
+    /* 形 */
+    border-radius: 8px;
+}
+
+/* NEWS */
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.news div{
+    /* 並び方 */
+    display: flex;
+    gap: 20px;
+    /* ボックス書式 */
+    width: 1000px;
+    border-bottom: 1px solid #E2E2E2;
+}
+.news_title{
+    /* ボックス書式 */
+    width: 150px;
+    background-color: #FBF8F1;
+    border-radius: 10px;
+}
+.news_title_news{
+    /* ボックス書式 */
+    background-color: #3F8F5A;
+}
+.news_title_press{
+    /* ボックス書式 */
+    background-color: #F08A3C;
+}
+.news_title_info{
+    /* ボックス書式 */
+    background-color: #F7B9C4;
+}
+.news_summary{
+    /* ボックス書式 */
+    width: 800px;
+    text-align: left;
+}
+.news_click{
+    /* ボックス書式 */
+    color: #3F8F5A;
+    width: 200px;
+    border: 1px solid #3F8F5A;
+    border-radius: 20px;
+}
+/* NEWS */
+.pickup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #E8F3EA;
+}
+.pickup_contents{
+    display: flex;
+}
+.pickup_contents_detail{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.pickup_logo{
+    font-size: 200px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;  /* ← 絵文字を左右の中央に */
+    align-items: center;      /* ← 絵文字を上下の中央に */
+    margin: 0 auto;           /* ← 箱そのものを中央に置く */
+}
+.pickup_summary{
+    width: 400px; 
+}
+
+/* COMPANY */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+.company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0px; align-items: start; }
+
+.message {
+    width: 500px;
+  background: #FBF8F1;
+  border-radius: 8px;
+  padding: 40px;
+}
+.message-photo {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: #fde3cc;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  margin-bottom: 24px;
+  margin: 0 auto;
+}
+.message-label { font-size: 13px; color:#F08A3C; font-weight: 700; }
+.message-catch { font-size: 24px; font-weight: 700; line-height: 1.6; color: #3F8F5A; margin: 8px 0 16px; }
+.message-body > p:not(.message-label):not(.message-catch) { font-size: 15px; }
+.message-name { margin-top: 20px; text-align: right; }
+.message-name strong { font-size: 20px; margin-left: 8px; }
+.message-name small { color: var(--text-sub); margin-left: 4px; }
+
+.profile-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+.profile-table caption {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+}
+.profile-table th, .profile-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #E2E2E2;
+  text-align: left;
+  vertical-align: top;
+  font-size: 15px;
+}
+.profile-table th { width: 120px; color: var(--green); font-weight: 700; border-bottom-color: var(--green); }
+
+.history { margin-top: 80px; }
+.history-title, .access-body h3 { font-size: 20px; color: var(--green-dark); margin-bottom: 24px; }
+.history-list { 
+    position: relative; 
+    padding-left: 8px; 
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+}
+.history-list::before {
+  content: "";
+  position: absolute;
+  left: 52px; top: 10px; bottom: 10px;
+  width: 2px;
+  background: var(--green-light);
+}
+.history-list li { display: flex; align-items: baseline; gap: 40px; padding: 12px 0; position: relative; }
+.history-list .year {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--green);
+  width: 56px;
+  flex-shrink: 0;
+}
+.history-list li::after {
+  content: "";
+  position: absolute;
+  left: 39px; top: 26px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--orange);
+}
+
+.access {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+  align-items: center;
+}
+.map { height: 340px; border-radius: var(--radius); overflow: hidden; }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; }
+.access-body p + p { margin-top: 12px; }
+.access-body p { font-size: 15px; }
